@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import LandingPage from "./pages/Landing";
 import FindMatch from "./pages/FindMatch";
 import { Applayout } from "./layouts/AppLayout";
+import HackerQuiz from "./pages/StartMatch";
 
 export const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ export const router = createBrowserRouter([
       {
         path: "find-match",
         element: <FindMatch />
+      },
+      {
+        path: "start-match",
+        element: <HackerQuiz />
       }
     ]
   }
